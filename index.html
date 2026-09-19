@@ -1,56 +1,24 @@
 <!DOCTYPE html>
-
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Vault</title>
+    <title>Benis Own Unblocked Games</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="menu">
+        <button onclick="cambiarJuego('https://html5.gamedistribution.com/rvvASMiM/a62c6453982e4e1fb56447c2d770c01c/?gd_sdk_referrer_url=https://jereybeni.github.io/Benis-own-unblocked-games/')">Subway Surfers</button>
+        <button onclick="cambiarJuego('https://html5.gamedistribution.com/a186dc9ac7f548f884db8ff54df6dd9f/?gd_sdk_referrer_url=https://jereybeni.github.io/Benis-own-unblocked-games/')">Fruit Ninja</button>
+    </div>
 
-```
-<header class="navbar">
-    <div class="logo">🎮 Game Vault</div>
+    <div class="game-container">
+        <iframe id="gameFrame" src="https://html5.gamedistribution.com/rvvASMiM/a62c6453982e4e1fb56447c2d770c01c/?gd_sdk_referrer_url=https://jereybeni.github.io/Benis-own-unblocked-games/" scrolling="none" frameborder="0" allowfullscreen></iframe>
+    </div>
 
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="#">Juegos Flash</a>
-        <a href="#">Juegos HTML5</a>
-    </nav>
-</header>
-
-<main>
-    <section class="hero">
-        <h1>Juegos clásicos</h1>
-        <p>Una colección de juegos web para jugar directamente desde tu navegador.</p>
-    </section>
-
-    <section class="games-section">
-        <h2>Juegos</h2>
-
-        <div class="games-grid">
-
-            <a class="game-card" href="games/red-ball-4/index.html">
-                <img
-                    src="https://img.flashlegacy.com/game-icons/2MKqpWwLoY/96x54.webp"
-                    alt="Red Ball 4: Volume 2"
-                >
-
-                <div class="game-info">
-                    <h3>Red Ball 4: Volume 2</h3>
-                    <span class="tag flash">FLASH</span>
-                </div>
-            </a>
-
-        </div>
-    </section>
-</main>
-
-<footer>
-    <p>Game Vault · Juegos web clásicos</p>
-</footer>
-```
-
+    <script>
+        function cambiarJuego(url) {
+            document.getElementById('gameFrame').src = url;
+        }
+    </script>
 </body>
 </html>
